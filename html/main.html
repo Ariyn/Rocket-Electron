@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Launcher</title>
+		<script >
+			window.$ = window.jQuery = window.jquery = require('../Scripts/jquery-2.2.2.min');
+			window.ipc = require('electron').ipcRenderer;
+		</script>
+
+		<script src="../Scripts/rocket.js" charset="utf-8"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/bootstrap.readable.css">
+		<script src="../Scripts/bootstrap.min.js"></script>
+		<style>
+			body {
+				background-color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div  class="container row col-xs-12">
+			<div class="col-xs-9">
+				<div class="form-group">
+					<label for="rocketID">Rocket ID</label>
+					<input id="rocketID" placeholder="Rocket" class="form-control" />
+				</div>
+				<div class="form-group">
+					<label for="NOE">Number of Engines</label>
+					<input id="NOE" placeholder="1" class="form-control" />
+				</div>
+				<div class="form-group">
+					<label for="thrust">Thrust</label>
+					<input id="thrust" placeholder="912kN" class="form-control" />
+				</div>
+
+				<div>
+					<button class="btn btn-primary" id="calculate">calculate</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
